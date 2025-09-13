@@ -10,8 +10,14 @@ const Navbar = () => {
     { name: 'Emerald', href: '#emerald' },
     { name: 'Opal', href: '#opal' },
     { name: 'Ruby', href: '#ruby' },
-    { name: 'Chains', href: '#chains' },
     { name: 'Rings', href: '#rings' },
+    { name: 'Necklaces', href: '#necklaces' },
+    { name: 'Earrings', href: '#earrings' },
+    { name: 'Bracelets', href: '#bracelets' },
+    { name: 'Chains', href: '#chains' },
+    { name: 'Pendants', href: '#pendants' },
+    { name: 'Watches', href: '#watches' },
+    { name: 'Cufflinks', href: '#cufflinks' },
   ];
 
   return (

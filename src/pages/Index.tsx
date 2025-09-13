@@ -10,6 +10,12 @@ import opalImage from '@/assets/opal-collection.jpg';
 import rubyImage from '@/assets/ruby-collection.jpg';
 import chainsImage from '@/assets/chains-collection.jpg';
 import ringsImage from '@/assets/rings-collection.jpg';
+import braceletsImage from '@/assets/bracelets-collection.jpg';
+import earringsImage from '@/assets/earrings-collection.jpg';
+import necklacesImage from '@/assets/necklaces-collection.jpg';
+import pendantsImage from '@/assets/pendants-collection.jpg';
+import watchesImage from '@/assets/watches-collection.jpg';
+import cufflinksImage from '@/assets/cufflinks-collection.jpg';
 
 const Index = () => {
   const categories = [
@@ -32,16 +38,52 @@ const Index = () => {
       href: '#ruby'
     },
     {
+      title: 'Rings',
+      image: ringsImage,
+      description: 'Timeless rings for life\'s most precious moments',
+      href: '#rings'
+    },
+    {
+      title: 'Necklaces',
+      image: necklacesImage,
+      description: 'Elegant necklaces to grace your neckline beautifully',
+      href: '#necklaces'
+    },
+    {
+      title: 'Earrings',
+      image: earringsImage,
+      description: 'Stunning earrings from subtle studs to statement pieces',
+      href: '#earrings'
+    },
+    {
+      title: 'Bracelets',
+      image: braceletsImage,
+      description: 'Graceful bracelets including tennis and chain styles',
+      href: '#bracelets'
+    },
+    {
       title: 'Chains',
       image: chainsImage,
       description: 'Luxurious gold chains crafted to perfection',
       href: '#chains'
     },
     {
-      title: 'Rings',
-      image: ringsImage,
-      description: 'Timeless rings for life\'s most precious moments',
-      href: '#rings'
+      title: 'Pendants',
+      image: pendantsImage,
+      description: 'Beautiful pendants with meaningful designs and gemstones',
+      href: '#pendants'
+    },
+    {
+      title: 'Watches',
+      image: watchesImage,
+      description: 'Luxury timepieces that blend function with elegance',
+      href: '#watches'
+    },
+    {
+      title: 'Cufflinks',
+      image: cufflinksImage,
+      description: 'Sophisticated cufflinks for the discerning gentleman',
+      href: '#cufflinks'
     }
   ];
 
@@ -85,8 +127,52 @@ const Index = () => {
     },
     {
       id: '6',
-      name: 'Emerald Tennis Bracelet',
+      name: 'Tennis Bracelet Deluxe',
       price: 3400,
+      image: braceletsImage,
+      category: 'Bracelets'
+    },
+    {
+      id: '7',
+      name: 'Pearl Drop Earrings',
+      price: 1250,
+      originalPrice: 1450,
+      image: earringsImage,
+      category: 'Earrings'
+    },
+    {
+      id: '8',
+      name: 'Signature Pearl Necklace',
+      price: 1850,
+      image: necklacesImage,
+      category: 'Necklaces'
+    },
+    {
+      id: '9',
+      name: 'Diamond Heart Pendant',
+      price: 950,
+      image: pendantsImage,
+      category: 'Pendants'
+    },
+    {
+      id: '10',
+      name: 'Luxury Swiss Watch',
+      price: 5500,
+      originalPrice: 6200,
+      image: watchesImage,
+      category: 'Watches'
+    },
+    {
+      id: '11',
+      name: 'Platinum Cufflinks',
+      price: 750,
+      image: cufflinksImage,
+      category: 'Cufflinks'
+    },
+    {
+      id: '12',
+      name: 'Emerald Tennis Bracelet',
+      price: 3900,
       image: emeraldImage,
       category: 'Emerald'
     }
@@ -133,7 +219,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {categories.map((category) => (
               <CategoryCard
                 key={category.title}
@@ -189,7 +275,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard
                 key={index}
